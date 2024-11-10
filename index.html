@@ -45,12 +45,15 @@
             transform: translateX(-50%);
             background-color: rgba(0, 0, 0, 0.7);
             border: none;
-            padding: 12px 18px;
+            padding: 15px 20px;  /* Perbaiki padding */
             border-radius: 50%;
             cursor: pointer;
             color: #fff;
-            font-size: 28px;
+            font-size: 40px; /* Ukuran font yang lebih besar dan proporsional */
             transition: background-color 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .stop-music-btn:hover {
@@ -59,6 +62,7 @@
 
         .stop-music-btn i {
             pointer-events: none;
+            font-size: 1.5em;  /* Ukuran font relatif lebih besar untuk ikon */
         }
 
         .container {
