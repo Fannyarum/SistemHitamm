@@ -8,7 +8,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style type="text/css">
-        /* Kontainer untuk menampilkan gambar HP */
         .phone-container {
             position: relative;
             display: inline-block;
@@ -37,7 +36,6 @@
             padding: 0;
         }
 
-        /* Tombol stop musik */
         .stop-music-btn {
             position: absolute;
             bottom: 30px;
@@ -45,11 +43,11 @@
             transform: translateX(-50%);
             background-color: rgba(0, 0, 0, 0.7);
             border: none;
-            padding: 15px 20px;  /* Perbaiki padding */
+            padding: 12px 15px;
             border-radius: 50%;
             cursor: pointer;
             color: #fff;
-            font-size: 40px; /* Ukuran font yang lebih besar dan proporsional */
+            font-size: 30px;
             transition: background-color 0.3s;
             display: flex;
             justify-content: center;
@@ -62,7 +60,7 @@
 
         .stop-music-btn i {
             pointer-events: none;
-            font-size: 1.5em;  /* Ukuran font relatif lebih besar untuk ikon */
+            font-size: 1.2em;
         }
 
         .container {
@@ -73,7 +71,6 @@
             height: 100vh;
         }
 
-        /* Efek Love Mengelilingi Card */
         .love-container {
             position: absolute;
             top: -30px;
@@ -112,22 +109,15 @@
 </head>
 <body>
 
-    <!-- Musik Latar Belakang -->
     <audio id="background-music" autoplay loop>
         <source src="music.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
-    <!-- Kontainer Utama -->
     <div class="container text-center">
-        <!-- Hapus bagian <h5> untuk menghilangkan teks "Selamat Pagi Myfren" -->
-        <!-- <h5>Selamat Pagi Myfren</h5> -->
-        
-        <!-- Tampilan HP -->
         <div class="phone-container">
             <img src="raja1.jpeg" alt="HP" class="img-fluid phone-img">
             
-            <!-- Efek Love Mengelilingi Card -->
             <div class="love-container">
                 <i class="fas fa-heart love-icon" style="color: pink;"></i>
                 <i class="fas fa-heart love-icon" style="color: red;"></i>
@@ -137,7 +127,6 @@
                 <i class="fas fa-heart love-icon" style="color: hotpink;"></i>
             </div>
 
-            <!-- Tombol Stop Musik dengan Ikon Stop -->
             <button id="music-button" class="stop-music-btn" onclick="stopMusic()">
                 <i class="fas fa-stop"></i>
             </button>
@@ -145,18 +134,16 @@
     </div>
 
     <script>
-        // Mendapatkan elemen audio dan tombol
         const audio = document.getElementById('background-music');
         const musicButton = document.getElementById('music-button');
 
-        // Fungsi untuk berhenti dan memulai musik
         function stopMusic() {
             if (!audio.paused) {
-                audio.pause(); // Menghentikan musik
-                musicButton.innerHTML = '<i class="fas fa-play"></i>'; // Ganti ikon menjadi play
+                audio.pause();
+                musicButton.innerHTML = '<i class="fas fa-play"></i>';
             } else {
-                audio.play(); // Memainkan musik
-                musicButton.innerHTML = '<i class="fas fa-stop"></i>'; // Ganti ikon menjadi stop
+                audio.play();
+                musicButton.innerHTML = '<i class="fas fa-stop"></i>';
             }
         }
     </script>
