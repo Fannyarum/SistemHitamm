@@ -71,40 +71,11 @@
             height: 100vh;
         }
 
-/*         .love-container {
-            position: absolute;
-            top: -30px;
-            left: -30px;
-            right: -30px;
-            bottom: -30px;
-            border-radius: 25px;
-            pointer-events: none;
-            animation: spinLove 5s infinite linear;
-        }
-
-        .love-icon {
-            position: absolute;
-            font-size: 30px;
-            color: pink;
-            animation: bounce 2s ease-in-out infinite;
-        }
-
-        .love-icon:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
-        .love-icon:nth-child(2) { top: 20%; left: 80%; animation-delay: 0.5s; }
-        .love-icon:nth-child(3) { top: 50%; left: 95%; animation-delay: 1s; }
-        .love-icon:nth-child(4) { top: 80%; left: 80%; animation-delay: 1.5s; }
-        .love-icon:nth-child(5) { top: 90%; left: 50%; animation-delay: 2s; }
-        .love-icon:nth-child(6) { top: 70%; left: 10%; animation-delay: 2.5s; } */
-
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-15px); }
         }
 
-/*         @keyframes spinLove {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        } */
     </style>
 </head>
 <body>
@@ -117,15 +88,6 @@
     <div class="container text-center">
         <div class="phone-container">
             <img src="raja1.jpeg" alt="HP" class="img-fluid phone-img">
-            
-            <div class="love-container">
-                <i class="fas fa-heart love-icon" style="color: pink;"></i>
-                <i class="fas fa-heart love-icon" style="color: red;"></i>
-                <i class="fas fa-heart love-icon" style="color: crimson;"></i>
-                <i class="fas fa-heart love-icon" style="color: darkred;"></i>
-                <i class="fas fa-heart love-icon" style="color: deeppink;"></i>
-                <i class="fas fa-heart love-icon" style="color: hotpink;"></i>
-            </div>
 
             <button id="music-button" class="stop-music-btn" onclick="stopMusic()">
                 <i class="fas fa-stop"></i>
